@@ -1,26 +1,39 @@
-// Funções
 
-function addNumber(x: number, y: number ): number {
-    return x + y;
-}
+let produto: object = {
+    name: "Carlos",
+    cidade: "Belém",
+    idade: 40,
+};
 
-function addToHello(name: string) : string {
-    return `Hello, ${name}!`;
-}
+type ProdutoLoja = {
+    nome: string;
+    preco: number;
+    unidades: number;
+};
 
-function callToPhone(phone: number | string) : number | string {
-    return phone;
-}
+let meuProduto: ProdutoLoja = {
+    nome: "Tênis",
+    preco: 89.99,
+    unidades: 5,
+};
 
-async function getDatabase(id: number): Promise<number | string> {
-    return "Felipe";
-    
-}
+// Array
 
-let soma: number = addNumber(4,7);
+let dados: string[] = ["carlos", "felipe", "ana"];
+let dados2: Array<string> = ["carlos", "felipe", "ana"];
 
-console.log(soma);
-console.log(addToHello("Felipe"));
-console.log(callToPhone(11313311));
-console.log(callToPhone("11313311"));
+// Array Multiplos tipos
+
+let infos: (string | number)[] = ["felipe", 30, "carlos", 40];
+
+// Tuplas
+
+let boleto: [string, number, number] = ["agua conta", 150.8, 47756430];
+
+//Datas
+
+let aniversario:Date = new Date("2022-12-01 05:00");
+console.log(aniversario.toDateString())
+
+
 
