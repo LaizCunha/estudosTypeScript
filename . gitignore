@@ -1,1 +1,11 @@
-node_modules
+# Ignorar a pasta node_modules
+node_modules/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos temporários
+temp/
+
+# Ignorar um arquivo específico
+config.js
